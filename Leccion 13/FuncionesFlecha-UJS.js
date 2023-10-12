@@ -44,3 +44,4 @@ console.log(Sumar(3,7));
 console.log(Restar(59,44));
 console.log(Dividir(23,5));
 console.log(Multiplcar(3,7));
+console.log(Sumar(4,8));
