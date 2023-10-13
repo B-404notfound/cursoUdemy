@@ -40,3 +40,7 @@ function miFuncionCallback(){
 }
 
 setTimeout(miFuncionCallback,3000); // despues de 3 seg
+
+setTimeout(function(){console.log('saludo asincrono 2');},4000);
+
+setTimeout(()=>console.log('saludo asincronico 3'),1000);
