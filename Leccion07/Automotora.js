@@ -37,7 +37,7 @@ class Auto{
     }
 
     toString(){
-        return `{ idAuto: ${this._idAuto},Marca: ${this._marca},Modelo: ${this._modelo},Precio: ${this._precio} }`;
+        return ` idAuto: ${this._idAuto},Marca: ${this._marca},Modelo: ${this._modelo},Precio: ${this._precio} `;
     }
 }
 
