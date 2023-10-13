@@ -32,3 +32,11 @@ function concatena(n1,n2,personaNombre){
 }
 
 concatena('juan','Palacio',nombrePersona);
+
+// Llamadas asincronicas con uso de setTimeout
+
+function miFuncionCallback(){
+    console.log('saludo asincrono despues de 3 seg');
+}
+
+setTimeout(miFuncionCallback,3000); // despues de 3 seg
