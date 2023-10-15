@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    
+    <h1 onclick="this.innerHTML='Nuevo Titulo'">Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+
+    <br/>
+    <h2 id="titulo2">Jugando con DOM con JavaScript</h2>
+    <button onclick="ver()">Ver</button>
+    <br/>
+
+    <h3 id="titulo3">Aprendiendo DOM con Javascript</h3>
+    <button onclick="cambiar()">cambiar color</button>
+ 
+   <script>
+       function mostrar(){
+        }
+
+        function ver(){
+            document.getElementById('titulo2').style.color='red';
+        }
+
+        function cambiar(){
+            document.getElementById('titulo3').style.color='green';
+        }
+   </script>
+
+</body>
+</html>

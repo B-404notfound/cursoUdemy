@@ -33,7 +33,7 @@
     <div id="suma3"></div>
 
     <br/>
-    
+
         <h3>Formulario 2</h3>
     <form  id="formulario02">
         Dirección: <input type="text" name="direccion" value="direccion">
@@ -49,9 +49,9 @@
         function mostrarTexto(){
             let formulario2 = document.forms['formulario1'];
             let palabra = '';
-            for (let elemento of formulario2){
-                palabra += elemento.value + '<br/>';
-            }
+            let nombre = formulario1['nombre'];
+            let apellido = formulario1['apellido'];
+            palabra = nombre.value + '<br/>'+ apellido.value;
             document.getElementById('texto1').innerHTML= palabra;
         }
 
