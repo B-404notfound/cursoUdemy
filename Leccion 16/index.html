@@ -8,6 +8,13 @@
         .azul{
             color:blue;
         }
+
+        .verde{
+            color:chartreuse;
+        }
+        .rojo{
+            color:red;
+        }
     </style>
 </head>
 <body>
@@ -15,6 +22,11 @@
     <h1 id="cabecera" class="azul">Ejemplo DOM con Javascript</h1>
     <p id="parrafo1" class="azul">Saludos!</p>
     <p id="parrafo2" class="azul">Otro parrafo</p>
+
+    <p id="parrafo3" class="verde">Aqui estamos con DOM en Javascript</p>
+    <p id="parrafo4">Jugando con DOM </p>
+    <br/>
+    <h2 id="cabecera2" class="rojo">Pongale nombre al niño</h2>
    
    
 
@@ -25,9 +37,49 @@
         console.log(`${elemento.innerHTML}`);
     }
 
-    
-   
+    let elementos1 = document.querySelectorAll('p.azul');
+    console.log(`N° de elementos: ${elementos1.length}`);
+    for(let elemento1 of elementos1){
+        console.log(`${elemento1.innerHTML}`);
+     }
 
+    let elementos2 = document.querySelectorAll('h2.rojo');
+     console.log(`N° de elementos: ${elementos2.length}`);
+     for(let elemento2 of elementos2){
+        console.log(`${elemento2.innerHTML}`);
+     }
+
+     let elementos3 = document.querySelectorAll('p.verde');
+     console.log(`N° de elementos: ${elementos3.length}`);
+     for(let elemento3 of elementos3 ){
+        console.log(`${elemento3.innerHTML}`);
+     }
+
+    let colorverde = document.getElementsByClassName('verde');
+    console.log(`N° de elementos: ${colorverde.length}`);
+    for(let letra of colorverde){
+        console.log(`${letra.innerHTML}`);
+    }
+
+   let tagDelParrafo = document.getElementsByTagName('p');
+   console.log(`N° de elementos: ${tagDelParrafo.length}`);
+   for(let verso of tagDelParrafo){
+    console.log(`${verso.innerHTML}`);
+   }
+
+   let parrafo3 = document.getElementById('parrafo3');
+   console.log(`valor parrafo 3: ${parrafo3.innerHTML}`);
+   
+  let parrafo4 = document.getElementById('parrafo4');
+  console.log(`valor parrafo 4: ${parrafo4.innerHTML}`);
+
+  let cabecera2 = document.getElementsByClassName('rojo');
+  console.log(`N° de elementos: ${cabecera2.length}`);
+  for(let cb2 of cabecera2){
+    console.log(`${cb2.innerHTML}`);
+  }
+
+  
 
 </script>
 
