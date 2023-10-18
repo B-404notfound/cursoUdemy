@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo DOM con JavaScript</title>
 </head>
-<body>
+<body onload="entrar()">
     
-    <h1 onclick="this.innerHTML='Nuevo Titulo'">Manejo DOM con JavaScript</h1>
-    <button onclick="mostrar()">Mostrar</button>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <br/>
+    <div id='mostrar'></div>
+    
+  
     <br/>
 
-    <br/>
-    <h2 id="titulo2">Jugando con DOM con JavaScript</h2>
-    <button onclick="ver()">Ver</button>
-    <br/>
-
-    <h3 id="titulo3">Aprendiendo DOM con Javascript</h3>
-    <button onclick="cambiar()">cambiar color</button>
- 
+   
    <script>
-       function mostrar(){
-        }
 
-        function ver(){
-            document.getElementById('titulo2').style.color='red';
+      function entrar(){
+        alert('Entrando a la pagina web');
+        let texto = '';
+        if(navigator.cookieEnabled){
+            texto= 'Cookies estan habilitadas';
         }
-
-        function cambiar(){
-            document.getElementById('titulo3').style.color='green';
+        else{
+            texto= 'Cookies estan inhabilitadas';
         }
+        document.getElementById('mostrar').innerHTML= texto;
+      }
+      
+      
    </script>
 
 </body>
