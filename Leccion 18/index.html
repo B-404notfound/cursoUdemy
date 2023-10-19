@@ -10,8 +10,64 @@
 
     <div class="container">
       <h1>Aplicación Calculadora</h1>
+      <form id="forma">
+        <div class="mb-3">
+          <label for="operandoA">Operando A</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando A" id="operandoA"/>
+        </div>
+        <div class="mb-3">
+          <label for="operandoB">Operando B</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando B" id="operandoB"/>
+        </div>
+      </form>
+      <button class="btn btn-primary mb-3" onclick="sumar()">Sumar </button>
+       <div id="resultado"></div>
     </div>
-
+    <div class="container">
+      <h1>Aplicación Calculadora Restar</h1>
+      <form id="sustraccion">
+        <div class="mb-3">
+          <label for="operandoA">Operando A</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando A" id="operandoA"/>
+        </div>
+        <div class="mb-3">
+          <label for="operandoB">Operando B</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando B" id="operandoB"/>
+        </div>
+      </form>
+      <button class="btn btn-primary mb-3" onclick="restar()">Restar</button>
+       <div id="totalResta"></div>
+    </div>
+    <div class="container">
+      <h1>Aplicación Calculadora Multiplicar</h1>
+      <form id="multiplicacion">
+        <div class="mb-3">
+          <label for="operandoA">Operando A</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando A" id="operandoA"/>
+        </div>
+        <div class="mb-3">
+          <label for="operandoB">Operando B</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando B" id="operandoB"/>
+        </div>
+      </form>
+      <button class="btn btn-primary mb-3" onclick="multiplicar()">Multiplicar</button>
+       <div id="totalmulti"></div>
+    </div>
+    <div class="container">
+      <h1>Aplicación Calculadora Dividir</h1>
+      <form id="division">
+        <div class="mb-3">
+          <label for="operandoA">Operando A</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando A" id="operandoA"/>
+        </div>
+        <div class="mb-3">
+          <label for="operandoB">Operando B</label>
+          <input type="number" class="form-control" placeholder="Escribe aqui operando B" id="operandoB"/>
+        </div>
+      </form>
+      <button class="btn btn-primary mb-3" onclick="dividir()">Dividir</button>
+       <div id="totaldiv"></div>
+    </div>
 
 
 
