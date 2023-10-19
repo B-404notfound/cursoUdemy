@@ -6,21 +6,53 @@
     <title>Manejo DOM con Javascript</title>
 </head>
 <body>
-
-
      <h1 id="titulo" >Manejo DOM con JavaScript</h1>
      <br/>
-     Nombre: <input type="text" id="nombre"/>
-     <br/><br/>
-     Apellido: <input type="text" id="apellido"/>
+     <form  id="forma">
+         Nombre: <input type="text" id="nombre"/>
+         <br/><br/>
+         Apellido: <input type="text" id="apellido"/>
+         <br/><br/>
+         Dirección: <input type="text" id="direccion"/>
+     </form>
+        <br/>
+     <form id="prototipo">
+      Email : <input type="text" id="email"/>
+      <br/><br/>
+      celular: <input type="text" id="celular"/>
 
+     </form>
      <script>
-        document.getElementById('nombre').addEventListener('focus',cambiar);
-        document.getElementById('nombre').addEventListener('blur',regresar);
+        const prototipo1 = document.getElementById('prototipo');
+        const forma = document.getElementById('forma');
 
-        document.getElementById('apellido').addEventListener('focus',cambiar);
-        document.getElementById('apellido').addEventListener('blur',regresar);
+        forma.addEventListener('focus',(evento)=>{
+            evento.target.style.background = 'yellow';
+        },true);
+        forma.addEventListener('blur',(evento)=>{
+            evento.target.style.background = '';
+        },true);
 
+        prototipo1.addEventListener('focus',(turnos)=>{
+            turnos.target.style.background = 'red';
+        },true);
+
+        prototipo1.addEventListener('blur',(turnos)=>{
+            turnos.target.style.background = '';
+        },true);
+        //document.getElementById('apellido').addEventListener('focus',cambiar);
+        //document.getElementById('apellido').addEventListener('blur',regresar);
+
+        //document.getElementById('direccion').addEventListener('focus',mostrar);
+       // document.getElementById('direccion').addEventListener('blur',devolver);
+
+       /*document.getElementById('direccion').addEventListener('focus',(punto)=>{
+            punto.target.style.background = 'black';
+       });
+
+       document.getElementById('direccion').addEventListener('blur',(punto)=>{
+            punto.target.style.background = '';
+       });
 
             function cambiar(evento){
                 let componente = evento.target;
@@ -30,6 +62,14 @@
             function regresar(evento){
                 evento.target.style.background = 'white';
             }
+
+            function mostrar(punto){
+                punto.target.style.background = 'green';
+            }
+
+            function devolver(punto){
+                punto.target.style.background = 'white';
+            }*/
         
      </script>
 </body>
