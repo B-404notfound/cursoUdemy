@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Invitados</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="mostrarInvitados()">
+    
+    <div class="contenedor" id="cabecero">
+        <h1>Listado de Invitados</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">
+            <ul id="invitados">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div style="text-align: center;">
+            <button style="cursor: pointer;" onclick="agregarInvitados()">+</button>
+        </div>
+        <form id="forma1">
+            <input type="text" id="nombre"placeholder='Nombre'/>
+            <input type="text" id="apellido" placeholder="Apellido"/>
+        </form>
+    </div>
+
+</body>
+</html>
